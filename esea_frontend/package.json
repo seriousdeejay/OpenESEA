@@ -15,6 +15,7 @@
     "primevue": "^3.2.0-rc.1",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
+    "vuelidate": "^0.7.6",
     "vuetify": "^2.4.3",
     "vuex": "^4.0.0-0"
   },
