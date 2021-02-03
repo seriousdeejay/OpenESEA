@@ -1,4 +1,15 @@
 <template>
+    <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h2><router-link to="/index">Subscriptions</router-link></h2>
+        <router-link to="/create" class="btn btn-sm btn-primary">Add subscription</router-link>
+
+        <router-view />
+      </div>
+    </div>
+  </div>
+</template>
   <!-- <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
@@ -8,14 +19,13 @@
     <div>
     <InputText />
     <Button label="Greet"></Button>
-  </div> -->
+  </div>
   <div>
     <InputText v-model="text"/>
     <Button label="Greet" icon="pi pi-user" @click="greet"></Button>
     <Toast />
     {{text}}
   </div>
-</template>
 
 <script>
 import { defineComponent, ref } from 'vue'
@@ -69,4 +79,4 @@ export default defineComponent({
     }
   }
 }
-</style>
+</style> -->

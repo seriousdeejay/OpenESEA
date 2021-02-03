@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',   # x
     'corsheaders',      # x
-    'ESEA_core',        # 'ESEA_core.apps.EseaCoreConfig',
+    'ESEA_core.apps.EseaCoreConfig',    # X
 
 ]
 
