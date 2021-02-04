@@ -5,4 +5,4 @@ class SubscriptionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Subscription
         fields = ('id', 'name', 'description', 'currency', 
-                'amount', 'created_at', 'updated_at')
+                'amount', 'created_at', 'updated_at') #__all__ selects all fields

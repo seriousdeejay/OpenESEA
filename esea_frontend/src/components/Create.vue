@@ -63,20 +63,7 @@ export default {
             submitted: false
         }
     },
-    // validations: {
-    //     subscription: {
-    //         name: { required, min: minLength(4) },
-    //         currency: { required },
-    //         amount: { required }
-    //     }
-    // },
     methods: {
-        // submit () {
-        //     this.$v.form.$touch();
-        //     if (this.$v.subscription.$error) return
-        //     // to form submit after this
-        //     alert('Form submitted')
-        // },
         create: function (e) {
                 axios
                     .post('http://127.0.0.1:8000/api/subscriptions/',

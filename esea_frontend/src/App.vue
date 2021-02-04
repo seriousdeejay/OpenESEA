@@ -1,15 +1,43 @@
 <template>
-    <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <h2><router-link to="/index">Subscriptions</router-link></h2>
-        <router-link to="/create" class="btn btn-sm btn-primary">Add subscription</router-link>
+<div class="content">
+  <div class="p-d-flex p-jc-center" style="width: 1000px">
+      <Button type="Button" icon="pi pi-check" class="p-mr-2" />
+      <Button type="Button" icon="pi pi-trash" class="p-button-danger"/>
+      <Button type="Button" icon="pi pi-search" class="p-ml-auto p-button-help"/>
+  </div>
 
+  <Card style="width: 1000px; margin-bottom: 2em" class="p-d-block p-mx-auto p-text-center">
+    <template #title>
+        Simple Card
+    </template>
+    <template #content>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt
+        quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!</p>
+    </template>
+</Card>
+        <h2><router-link to="dashboard">Subscriptions</router-link></h2>
+        <router-link to="/create" class="btn btn-sm btn-primary">Add subscription</router-link>
+        <div class="p-d-block p-mx-auto">
         <router-view />
+        </div>
+</div>
+</template>
+
+<style>
+.content {
+  max-width: 1000px;
+  margin:auto;
+}
+
+</style>
+<!--
+</div>
+    <div class="container">
+      <div class="col-md-8">
       </div>
     </div>
-  </div>
-</template>
+</template> -->
+
   <!-- <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
@@ -79,4 +107,5 @@ export default defineComponent({
     }
   }
 }
-</style> -->
+</style>
+-->

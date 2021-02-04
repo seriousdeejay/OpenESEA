@@ -12,8 +12,9 @@ module.exports = {
     parser: 'babel-eslint'
   },
   rules: {
-    semi: 0, // Makes sure that semi colons can be used.
-    indent: 0, // Ignores indent mistakes.
+    'semi': 0, // Makes sure that semi colons can be used.
+    'indent': 0, // Ignores indent mistakes.
+    'no-tabs': 0,
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
   }
