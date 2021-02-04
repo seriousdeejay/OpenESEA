@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',   # x
     'corsheaders',      # x
-    'ESEA_core.apps.EseaCoreConfig',    # X
+    'ESEA_core',    # .apps.EseaCoreConfig
 
 ]
 
@@ -89,6 +89,8 @@ DATABASES = {
     }
 }
 
+
+AUTH_USER_MODEL = 'ESEA_core.CustomUser'
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
