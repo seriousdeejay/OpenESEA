@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from .models import Subscription
-from .serializers import SubscriptionSerializer
+from .models import Subscription, Organisation
+from .serializers import SubscriptionSerializer, OrganisationSerializer
 from rest_framework import generics
 
 # Create your views here.
@@ -13,3 +13,10 @@ class SubscriptionDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Subscription.objects.all()
     serializer_class = SubscriptionSerializer
 
+class OrganisationList(generics.ListCreateAPIView):
+    queryset = Organisation.objects.all()
+    serializer_class = OrganisationSerializer
+
+class OrganisationDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Organisation.objects.all()
+    serializer_class = OrganisationSerializer
